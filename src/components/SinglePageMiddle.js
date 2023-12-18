@@ -102,3 +102,5 @@ const SinglePageMiddle = () => {
                         <p className="py-4">My partner and I had an amazing time here, such a pleasant retreat :)
                             thank you! We loved the nature, the bamboo living life, and the epic shower in the jungle.
                             They provided yoga mats on request which were really nice.</p>
+
+                           
