@@ -97,3 +97,64 @@ const SinglePageMiddle = () => {
                             Definitely nice experience. In quiet village, very nice to go
                             with scooter around,
                             to see real Bali, culture and people.</p>
+
+
+                            <h3 className="text-lg font-bold uppercase">~ Fantastic</h3>
+                        <p className="py-4">My partner and I had an amazing time here, such a pleasant retreat :)
+                            thank you! We loved the nature, the bamboo living life, and the epic shower in the jungle.
+                            They provided yoga mats on request which were really nice.</p>
+
+                        <h3 className="text-lg font-bold uppercase">~ Supperb experience</h3>
+                        <p className="py-4">The place was absolutely wonderful and everything we hoped it would be.
+                            Being outside with nature was so special to us. The staff were wonderful and friendly.
+                            The food was amazing!</p>
+
+                        <h3 className="text-lg font-bold uppercase">~ Great experience</h3>
+                        <p className="py-4">Our stay at Hideout Bali was amazing. We were thrilled with the cleanliness and beauty of the property.
+                            We were greeted on our first day by some monitor lizards and they were fantastic. Food was great.
+                            Thanks for an amazing stay!</p>
+
+                        <h3 className="text-lg font-bold uppercase">~ Awe Struck</h3>
+                        <p className="py-4">It was an exceptional experience, I brought my husband for a surprise trip on our honeymoon
+                            and he loved it. We did see a snake in the stream outside on our last day and
+                            I am happy about that if he witnessed anything of the sort on our first day we would
+                            have to leave with immediate effect!</p>
+
+
+                        <h3 className="text-lg font-bold uppercase">~ Great stay</h3>
+                        <p className="py-4">We stayed in Horizon and in Hideout,
+                            and for me this one is one with more soul, river sound is stunning,
+                            chilling all day next to it is something special. It's more closed
+                            upstairs. But still lots of animals around you, so be prepared!
+                            Definitely nice experience. In quiet village, very nice to go
+                            with scooter around,
+                            to see real Bali, culture and people.</p>
+
+                        <h3 className="text-lg font-bold uppercase">~ Fantastic</h3>
+                        <p className="py-4">My partner and I had an amazing time here, such a pleasant retreat :)
+                            thank you! We loved the nature, the bamboo living life, and the epic shower in the jungle.
+                            They provided yoga mats on request which were really nice.</p>
+
+                        <h3 className="text-lg font-bold uppercase">~ Supperb experience</h3>
+                        <p className="py-4">The place was absolutely wonderful and everything we hoped it would be.
+                            Being outside with nature was so special to us. The staff were wonderful and friendly.
+                            The food was amazing!</p>
+
+                        <h3 className="text-lg font-bold uppercase">~ Great experience</h3>
+                        <p className="py-4">Our stay at Hideout Bali was amazing. We were thrilled with the cleanliness and beauty of the property.
+                            We were greeted on our first day by some monitor lizards and they were fantastic. Food was great.
+                            Thanks for an amazing stay!</p>
+
+                        <h3 className="text-lg font-bold uppercase">~ Awe Struck</h3>
+                        <p className="py-4">It was an exceptional experience, I brought my husband for a surprise trip on our honeymoon
+                            and he loved it. We did see a snake in the stream outside on our last day and
+                            I am happy about that if he witnessed anything of the sort on our first day we would
+                            have to leave with immediate effect!</p>
+
+                    </div>
+                </label>
+            </label>
+        </div>
+    </div>)
+
+}
