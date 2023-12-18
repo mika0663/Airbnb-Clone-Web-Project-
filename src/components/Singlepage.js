@@ -61,3 +61,116 @@ const SinglePage = () => {
         setDefaultImage(carouselPic1)
         setActiveImg(false);
     }
+    
+    return (
+
+        <div>
+
+            <div className='basicDeatils flex flex-row text-lg'>
+                <p className='font-semibold uppercase'>{name}</p>
+                <div className=''>
+                    <FaStar className=' text-xl inline-block mr-2 ' />
+                    <p className=' inline-block'> {stars} </p>
+                </div>
+                <p className=''>{Math.floor(Math.random() * (999 - 100 + 1) + 100)} reviews</p>
+
+            </div>
+
+
+
+
+
+            {activeImg === true ? <img src={defaltImage} className="single-page-main-pic cursor-pointer" /> : <img src={carouselPic1} className="single-page-main-pic cursor-pointer" />}
+
+
+            <div className='absolute flex single-page-hold'>
+                <img src={carouselPic2} className="w-40 rounded-xl cursor-pointer single-page-pic" onMouseOver={getImageSrcHnadler} onMouseLeave={setDefaultImgHnadler} />
+                <img src={carouselPic3} className="w-40 rounded-xl cursor-pointer single-page-pic" onMouseOver={getImageSrcHnadler} onMouseLeave={setDefaultImgHnadler} />
+                <img src={carouselPic4} className="w-40 rounded-xl cursor-pointer single-page-pic" onMouseOver={getImageSrcHnadler} onMouseLeave={setDefaultImgHnadler} />
+                <img src={carouselPic5} className="w-40 rounded-xl cursor-pointer single-page-pic" onMouseOver={getImageSrcHnadler} onMouseLeave={setDefaultImgHnadler} />
+            </div>
+
+            <p className='features-text text-2xl font-semibold uppercase'>Entire rental unit hosted by Ben  </p>
+
+            <p className='actual-features text-xl'>{Math.floor(Math.random() * 6) + 3} guests . {Math.floor(Math.random() * 6) + 1} . bedrooms {Math.floor(Math.random() * 5) + 3} beds . {Math.floor(Math.random() * 2) + 3}  bathrooms</p>
+
+            <p className='line1 text-gray-300'>__________________________________________________________________________________________________________</p>
+            <p className='line2 text-gray-300'>__________________________________________________________________________________________________________</p>
+
+
+
+
+            <div className='icon-hold'>
+                <RiMedal2Fill className='text-3xl' />
+                <FaKey className='text-3xl' />
+                <FaCalendarCheck className='text-3xl' />
+            </div>
+
+            <div className='heading-hold'>
+                <p className='text-xl font-semibold'>Ben is a Superhost. </p>
+                <p className='text-xl font-semibold'>Great check-in experience.  </p>
+                <p className='text-xl font-semibold'>Free cancellation for 48 hours. </p>
+            </div>
+
+            <div className='description-hold'>
+                <p> highly rated hosts who are committed to providing great stays for their guests.</p>
+                <p className='-mt-4 sm:mt-0'>90% of recent guests gave the check-in process a 5-star rating.</p>
+                <p className='mt-4 sm:mt-0'>No questions asked.</p>
+
+            </div>
+
+            <div className='side-box-card absolute'>
+                <p className='single-page-price font-semibold text-2xl'> ${price}/ Night   </p>
+
+                <div className='ab'>
+                    <FaStar />
+                </div>
+
+                <p className='rev-card absolute'>{stars}</p>
+                <p className='rev2-card font-semibold'> <p>{Math.floor(Math.random() * (999 - 100 + 1) + 100)} reviews</p>  </p>
+
+            </div>
+
+            <div className='reserve-date-button-holder'>
+                <button className='reserve-date-button rounded-xl' onClick={buttonOpenHandler}> Reserve</button>
+
+            </div>
+
+
+            <div className="s">
+                <CalendarFunc placesId={id} placesNam={name} placesPic={carouselPic1} buttonopenState={buttonOpen} buttonCloseState={buttonClose} closeFunc={buttonCloseHandler} />
+            </div>
+
+            <div className='expense-title-hold'>
+                <p>Servicing Fee</p>
+                <p>Cleaning Fee</p>
+                <p>Processing Fee</p>
+            </div>
+
+            <div className='calculated-expense-hold'>
+
+                <p className='relative w-40 le'>calculated at next step</p>
+                <p>180</p>
+                <p>230</p>
+                <p>450</p>
+
+            </div>
+            <div className='line-total text-gray-300'>_____________________________________________________</div>
+
+            <div className='price-total-text absolute font-semibold text-xl uppercase'>Total</div>
+
+            <p className='price-total absolute font-semibold text-xl'>Calculated At Checkout</p>
+
+
+            <SinglePageMiddle />
+
+            <Footer1 />
+
+            <Footer2 />
+
+
+        </div>
+    )
+}
+
+export default SinglePage;
