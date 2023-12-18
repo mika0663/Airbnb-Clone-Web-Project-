@@ -16,3 +16,48 @@ import Footer1 from './Footer1';
 import Footer2 from './Footer2';
 import { createContext } from 'react';
 import "../styles/Tabs.css";
+
+const SinglePage = () => {
+
+    const [buttonOpen, setButtonOpen] = useState(false);
+    const [buttonClose, setButtonClose] = useState(true);
+
+
+
+
+    const IdContext = createContext();
+
+    const buttonOpenHandler = (event) => {
+        event.preventDefault();
+        setButtonOpen(true)
+        setButtonClose(false)
+    }
+
+    const buttonCloseHandler = (event) => {
+        event.preventDefault();
+        setButtonClose(false);
+        setButtonOpen(false)
+
+    }
+
+    const params = useParams();
+    const { id } = params;
+
+    const placeClicked = placesStore.find((item) => item.id === id)
+
+    const { name, homeMainPic, price, stars, carouselPic1, carouselPic2, carouselPic3, carouselPic4, carouselPic5 } = placeClicked || {}
+
+    const [activeImg, setActiveImg] = useState(false);
+
+    const [defaltImage, setDefaultImage] = useState(carouselPic1);
+
+
+    const getImageSrcHnadler = (e) => {
+        setDefaultImage(e.target.src)
+        setActiveImg(true)
+    }
+
+    const setDefaultImgHnadler = () => {
+        setDefaultImage(carouselPic1)
+        setActiveImg(false);
+    }
