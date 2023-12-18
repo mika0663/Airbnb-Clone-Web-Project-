@@ -158,3 +158,5 @@ const SinglePageMiddle = () => {
     </div>)
 
 }
+
+export default SinglePageMiddle
