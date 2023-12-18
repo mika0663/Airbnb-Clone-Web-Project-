@@ -111,3 +111,5 @@ const Tab2 = ({ pushDown }) => {
     )
 
 }
+
+export default Tab2
