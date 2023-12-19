@@ -112,5 +112,6 @@ const Tab3 = () => {
 
         </div>
     )
-            }
-            export default Tab3
+}
+
+export default Tab3

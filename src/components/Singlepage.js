@@ -61,7 +61,8 @@ const SinglePage = () => {
         setDefaultImage(carouselPic1)
         setActiveImg(false);
     }
-    
+
+
     return (
 
         <div>
@@ -172,5 +173,6 @@ const SinglePage = () => {
         </div>
     )
 }
+
 
 export default SinglePage;

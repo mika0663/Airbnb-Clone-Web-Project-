@@ -10,6 +10,7 @@ import { AiFillStar } from "react-icons/ai"
 import { TiTick } from "react-icons/ti";
 import SearchPageFooter from './SearchPageFooter';
 
+
 const SearchDetails = (props) => {
 
 
@@ -27,6 +28,7 @@ const SearchDetails = (props) => {
     var placeDetailsArray = placesStore.filter((item) => item.location.toLocaleLowerCase().includes(loc.toLocaleLowerCase()));  // getting the details from the main array with filter and storing it in "placeDetailsArray" and then passing it on to "orignalArray" state
 
     const [orignalArray, setOriginalArray] = useState(placeDetailsArray);
+
 
     const reviewesArr = ["Light cosy room in a modern home. Cosy clean light room with single bed and Wi-Fi, Furniture in this room will be update to higher standards by the time of your stay.",
         "Bright airy Studio apartment located on the Ground floor, a beautiful self-contained garden studio, located in the heart of historic Highgate Village.",
@@ -47,7 +49,6 @@ const SearchDetails = (props) => {
         setCoupleToggle(false)
     }
 
-    
     const openPetsHandler = () => {   // toggline the pets dropdown
         setOpenPets(!openPets)
         setCoupleToggle(false)
@@ -99,7 +100,6 @@ const SearchDetails = (props) => {
 
     }
 
-    
 
     const lowToHighFilter = () => {
         const eitherSort = (arr = []) => {
@@ -221,5 +221,4 @@ const SearchDetails = (props) => {
 }
 
 export default SearchDetails
-
 

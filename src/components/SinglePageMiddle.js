@@ -11,6 +11,7 @@ import modalPic from "../styles/pic.png"
 
 
 
+
 const SinglePageMiddle = () => {
 
     const params = useParams();
@@ -39,7 +40,7 @@ const SinglePageMiddle = () => {
             <p>Your perfect little staycation in Bali is right here. We take relaxation seriously.</p>
             <p>Hideout is a unique eco stay hidden in the mountains of Gunung Agung volcano
                 - far from the city life it acts as the perfect hideaway for all adventurous travellers.
-                We are honoured to be the number 4. most wished accommodation at Greenbnb in the </p>
+                We are honoured to be the number 4. most wished accommodation at Airbnb in the </p>
 
             <p className="font-bold text-xl underline">Show more</p>
 
@@ -98,8 +99,7 @@ const SinglePageMiddle = () => {
                             with scooter around,
                             to see real Bali, culture and people.</p>
 
-
-                            <h3 className="text-lg font-bold uppercase">~ Fantastic</h3>
+                        <h3 className="text-lg font-bold uppercase">~ Fantastic</h3>
                         <p className="py-4">My partner and I had an amazing time here, such a pleasant retreat :)
                             thank you! We loved the nature, the bamboo living life, and the epic shower in the jungle.
                             They provided yoga mats on request which were really nice.</p>

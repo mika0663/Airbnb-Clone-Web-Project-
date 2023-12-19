@@ -7,7 +7,6 @@ import { PayPalButtons } from '@paypal/react-paypal-js';
 import { PayPalScriptProvider } from '@paypal/react-paypal-js';
 
 
-
 const Paypal = (props) => {
 
     let placesName = props.nameOfPlace;

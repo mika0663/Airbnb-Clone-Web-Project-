@@ -16,7 +16,6 @@ import { BiBuildingHouse } from "react-icons/bi"
 import { Pagination } from "swiper";
 
 
-
 //TAB 1 = TROPICAL 
 
 
